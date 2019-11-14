@@ -1,96 +1,114 @@
+
+/*cоздать функция, которая принимает как параметр анониную 
+функцию  выводит на экран слово "Helo" и выполняет ее 
+в том случае, если пользователь введет слово 'hi'*/
+
+
+
+/*function showHello (text) {
+	let userText = prompt ('Write hi,please')
+	if (userText == 'hi') {
+		text()
+	}
+	else {
+		console.log('you are wrong(');
+	}
+
+}
+
+showHello ( function () {
+	alert ('Helo!');
+});*/
+
+
+// Задание номер 1
+
+function  arrayDouble (a,b,c,d) {
+	
+	arr = [];
+	arr.push (a,b,c,d);
+
+	for(var i=0; i<arr.length; i++) {
+    arr[i] *= 2;
+}
+	console.log (arr);
+}
+
+arrayDouble (10,1,1,1);
+
+
+
+// Задание номер 3
+
+let a = [[4,5,13],[-5,0,4], [12,-3,12]];
+
+let b = [[5,8,0],[87,65,7],[-50,24,43]];
 /*
- 
+let sumar = [];
+
+for (let i=0; i < a.length; i++)  {
+	sumar[i]= [];
+
+	for (let j=0; j < a[i].length; j++) {
+			sumar[i][j] = a[i][j]+b[i][j];
+		}
+	}
+
+	console.log(sumar);*/
 
 
 
 
-// a.Игральные кости
-var max = 7;
-var min = 1;
-
-console.log("Первый кубик: "+ Math.floor(Math.random()* (max - min) + min));
-console.log("Второй кубик: "+ Math.floor(Math.random()* (max - min) + min));
-
-
-
-
-
-
-
- // b. Орел и Решка
-var max = 2;
-var min = 0;
-
-randomNumber= Math.floor(Math.random()* (max - min) + min);
-
-console.log(randomNumber);
-
-if (randomNumber==0) {
-	console.log ("Орел");
-}
-
-else {
-	console.log ("Решка");
-} 
-
-
-
-
-// Задание с
-var max =+prompt("Введите максимальное число");
-var min =1
-
-var randomNumber= Math.round(Math.random()* (max - min) + min);
-
-console.log(randomNumber);
-
-
- // Задание d
-
-var max =+prompt("Введите максимальное число");
-var min =+prompt("Введите минимальное число");
-
-function randomIntFromInterval(min, max) { // min and max included 
-  return Math.floor(Math.random() * (max - min) + min);
+function SumMatrix(a,b)      
+{   
+    var matrix = a.length, n = a[0].length, C = [];
+    for (var i = 0; i < matrix; i++)
+     { C [ i ] = [];
+       for (var j = 0; j < n; j++) C[ i ][j] = a[ i ][j]+b[ i ][j];
+     }
+    return C;
 }
 
 
-for (var i; i <= max; randomIntFromInterval(min, max) ) {
-	console.log(i);
+console.log(SumMatrix(a,b));
+
+
+// Задание 2
+
+ var obj = {
+	bread: 25,
+	milk: 30,
+	chips: 50,
+	water: 10,
+	cucumbers: 42
 }
 
+// Вывод общей стоимомти покупок
+
+
+let sum = 0;
+for (let key in obj) {
+  sum += obj[key];
+}
+
+console.log("Обща стоимость покупок: " + sum); 
+
+
+
+/*let max = 0;
+
+for (let key in obj) {
+ max =  Math.max(obj[key]);
+}
+
+console.log(max);
 */
 
-
-
-
-/*
-function textName ()
-{
-var text = prompt ("Type your name,please");
-console.log(text.toUpperCase().charAt(0)
- + text.charAt(1)+text.charAt(2)
- +text.charAt(3)+text.charAt(4)
-+text.charAt(5)+text.charAt(6)+text.charAt(7)+text.charAt(8));
-
-}
-textName ();*/
-
-
-/*
-function max(a,b) {
-    return Math.max(a,b);
+let m = 0;
+for (let key in obj) {
+m = Math.max(obj[key]);
 }
 
-var number1 = max(2, 5);
-console.log (number1);
-
-var number1 = max(3, -1);
-console.log (number1);
-
-var number1 = max(1, 1);
-console.log (number1);
- */
-
+console.log(m);
 
 
