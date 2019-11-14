@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato',sans-serif;
+}
+
+
+img {
+	height: 100%;
+}
+
+.container {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    background: #fdde7e;
+    padding: 55px 0;
+
+}
+
+.cup {
+	background: #FFF;
+    margin: 3px;
+    flex: 0 0 30%;
+    width: 100%;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.cup:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+	.container {
+		flex-direction: column;
+	}
+}
+
+.price {
+	font-family: Miso Bold;
+    color: #02995b;
+    font-size: 70px;
+}
+
+h2 {
+	font-family: Miso;
+	font-weight: 300;
+	font-size: 70px;
+	margin: 10px;
+}
+
+span {
+	font-family: "Lato";
+	font-weight: 300;
+	font-weight: 20px;
+
+}
+
+h2,span {
+	color: #333333;
+}

@@ -1,0 +1,76 @@
+body {
+  background-color: #daf0ef;
+}
+
+
+header {
+  background-color:#b8f2e7;
+margin:25px 10px 25px;
+  padding:20px;
+   border:10px solid #449c90;
+  border-radius: 15px;
+  
+}
+
+
+footer {
+  background-color:#b8f2e7;
+margin:25px 10px 25px;
+   border:10px solid #449c90;
+  border-radius: 15px;
+  
+}
+section {
+  background-color:#ffe0f8;
+  padding:20px 25px;
+ border:3px solid #449c90;
+  border-radius: 10px;
+}
+iframe {
+  border: solid 15px #ffe0f8;
+  border: solid 5px#b8f2e7;
+}
+
+
+/*Oформление таблицы начало*/
+table {
+  border : solid 4px #ffe0f8;
+  background-color:#edcee7; 
+}
+
+td {border: 1px solid #449c90;
+padding:30px}
+
+/*Оформление таблицы КОНЕЦ*/
+
+
+iframe {
+  border: 5px solid #ffe0f8 ;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+h1,h2,h4,h5,h6 {
+  text-align: center;
+  color: #825a7a
+}
+
+h3 {
+  text-align: left;
+  color: #825a7a
+}
+
+.contact {
+  text-align: center;
+}
+
+.logo {
+  float:right;
+}
+
+div {padding: 10px;}
+ /*label {
+  margin: 10px;
+} 
+*/
+
